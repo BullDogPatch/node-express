@@ -6,7 +6,9 @@ app.use(express.json());
 app.listen(8080, () => console.log('My server is up and running.'));
 
 app.get('/', (request, response) => {
-  response.send('<h1>This is from the server</h1>');
+  response.send(
+    '<h1 style="color: red; text-align: center;">This is from the server</h1>'
+  );
 });
 
 app.get('/madagasca', (request, response) => {
